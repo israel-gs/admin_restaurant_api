@@ -1,0 +1,27 @@
+GET http://localhost:8000/api/category/
+Content-Type: application/json
+
+###
+
+DELETE http://localhost:8000/api/category/6292f0307009cd4456485c7d
+Content-Type: application/json
+
+###
+
+PUT http://localhost:8000/api/category/6292f0307009cd4456485c7d
+Content-Type: application/json
+
+{
+  "name": "Mesa 01",
+  "imageUrl": "asdasd"
+}
+
+###
+
+POST http://localhost:8000/api/category/
+Content-Type: application/json
+
+{
+  "name": "Entradas",
+  "imageUrl": "https://res.cloudinary.com/dqs6spa0k/image/upload/v1654149098/entrada_r8s6ia.png"
+}

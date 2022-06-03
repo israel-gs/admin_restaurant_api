@@ -1,0 +1,33 @@
+GET http://localhost:8000/api/plate/
+Content-Type: application/json
+
+###
+
+DELETE http://localhost:8000/api/plate/6292f28a7009cd4456485c81
+Content-Type: application/json
+
+###
+
+PUT http://localhost:8000/api/plate/6292f28a7009cd4456485c81
+Content-Type: application/json
+
+{
+  "name": "Ceviche 2",
+  "price": 30,
+  "description": "empty",
+  "code": "E001",
+  "categoryId": "6292f0307009cd4456485c7d"
+}
+
+###
+
+POST http://localhost:8000/api/plate/
+Content-Type: application/json
+
+{
+  "name": "Ceviche 4",
+  "price": 30,
+  "description": "No empty",
+  "code": "E001",
+  "categoryId": "6292f0307009cd4456485c7d"
+}

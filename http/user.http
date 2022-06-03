@@ -1,0 +1,40 @@
+GET http://localhost:8000/api/user/
+Content-Type: application/json
+
+###
+
+GET http://localhost:8000/api/user/6292f5657009cd4456485c85
+Content-Type: application/json
+
+###
+
+DELETE http://localhost:8000/api/user/6292f5657009cd4456485c85
+Content-Type: application/json
+
+###
+
+PUT http://localhost:8000/api/user/6292f5657009cd4456485c85
+Content-Type: application/json
+
+{
+  "name": "Administrador",
+  "username": "admin",
+  "password": "12345",
+  "isAdmin": true,
+  "isBlocked": false,
+  "attemptsCount": 0
+}
+
+###
+
+POST http://localhost:8000/api/user/
+Content-Type: application/json
+
+{
+  "name": "Administrador",
+  "username": "admin",
+  "password": "admin",
+  "isAdmin": true,
+  "isBlocked": false,
+  "attemptsCount": 0
+}

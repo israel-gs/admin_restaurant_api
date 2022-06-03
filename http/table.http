@@ -1,0 +1,32 @@
+GET http://localhost:8000/api/table/
+Content-Type: application/json
+
+###
+
+GET http://localhost:8000/api/table/6293e24071c6a03e78f5d0bf
+Content-Type: application/json
+
+###
+
+DELETE http://localhost:8000/api/table/6293e24071c6a03e78f5d0bf
+Content-Type: application/json
+
+###
+
+PUT http://localhost:8000/api/table/6293e24071c6a03e78f5d0bf
+Content-Type: application/json
+
+{
+  "name": "Mesa 1",
+  "isTaken": false
+}
+
+###
+
+POST http://localhost:8000/api/table/
+Content-Type: application/json
+
+{
+  "name": "Mesa 3",
+  "isTaken": false
+}
